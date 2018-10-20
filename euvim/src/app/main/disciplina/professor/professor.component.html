@@ -1,7 +1,7 @@
 <h3>Lista de professores</h3>
 
 <mat-list>
-  <ng-container *ngFor="let prof of listaProfessores">
+  <ng-container *ngFor="let prof of listaProfessores;trackBy: trackByFn">
     <mat-list-item>
       {{ prof.nome }} - {{ prof.email }}
     </mat-list-item>
